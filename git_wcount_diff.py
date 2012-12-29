@@ -36,7 +36,7 @@ def analyse_file(filename, rev_1, rev_2):
 
 def main():
     if len(sys.argv) < 3:
-        print "Usage: %s <commit> <commit>" % sys.argv[0]
+        print "Usage: git-wcount-diff <commit> <commit>"
         sys.exit(1)
 
     git_diff = subprocess.Popen(
